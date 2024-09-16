@@ -21,13 +21,13 @@ export function Skills() {
       className="space-y-6"
     >
       <Title>My skills</Title>
-      <div className="text-xl text-gray-400 ">
+      <div className="md:text-xl text-gray-400 ">
         <p>
           Throught this time that i&apos;ve been developing i came across some
           amazing technologies and these are that i utilize the most!
         </p>
       </div>
-      <div className="flex gap-x-10">
+      <div className="flex justify-center md:justify-start flex-wrap gap-10 md:flex-row">
         <SkillBox imgSrc="/next-js.svg" alt="NextJS" />
         <SkillBox imgSrc="/react.png" alt="ReactJS" />
         <SkillBox imgSrc="/node.png" alt="NodeJS" />

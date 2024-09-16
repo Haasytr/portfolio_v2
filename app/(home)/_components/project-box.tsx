@@ -18,7 +18,7 @@ export function ProjectBox({
   href,
 }: ProjectBoxInterface) {
   return (
-    <div className="bg-white/10 flex justify-between flex-col p-4 max-w-[33%] hover:scale-105 transition-all space-y-5 group rounded-lg">
+    <div className="bg-white/10 flex justify-between flex-col p-4 w-full xl:max-w-[32%] hover:scale-105 transition-all space-y-5 group rounded-lg">
       <div className="flex items-center space-x-5 pb-2 border-b-2 border-b-white">
         <File />
         <h1 className="font-bold text-2xl group-hover:text-blue-500">
@@ -26,7 +26,7 @@ export function ProjectBox({
         </h1>
       </div>
       <p>{description}</p>
-      <div className="flex space-x-4">
+      <div className="flex flex-wrap gap-5">
         {technologies.map((tech) => (
           <b key={tech.name}>{tech.name}</b>
         ))}

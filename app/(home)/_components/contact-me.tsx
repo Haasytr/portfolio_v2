@@ -21,15 +21,15 @@ export function ContactMe() {
       className="flex flex-col space-y-5"
     >
       <Title>Contact me</Title>
-      <p className="text-xl flex flex-col gap-y-4 text-gray-400">
+      <p className="md:text-xl flex flex-col gap-y-4 text-gray-400">
         Im always looking for new opportunities so feel free to contact me
       </p>
-      <div className="max-w-[50%] space-y-4">
-        <div className="p-3 border-2 flex space-x-4 items-center  text-lg rounded-md">
+      <div className="md:max-w-[50%] space-y-4">
+        <div className="p-3 border-2 flex space-x-4 items-center  md:text-lg rounded-md">
           <Mail />
           <span>Email: viniciuszero@live.com</span>
         </div>
-        <div className="p-3 border-2 flex space-x-4 items-center  text-lg rounded-md">
+        <div className="p-3 border-2 flex space-x-4 items-center  md:text-lg rounded-md">
           <Phone />
           <span>Phone: +55 (15) 99852-8626</span>
         </div>

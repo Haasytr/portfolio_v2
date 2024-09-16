@@ -21,7 +21,7 @@ export function BestProjects() {
       transition={{ duration: 1, delay: 0.65 }}
     >
       <Title>These are some of my projects</Title>
-      <div className="flex gap-10">
+      <div className="flex flex-wrap gap-6">
         <ProjectBox
           href="https://github.com/Haasytr/trello-clone"
           technologies={[

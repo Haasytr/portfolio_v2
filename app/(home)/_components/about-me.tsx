@@ -14,7 +14,7 @@ export function AboutMe() {
   return (
     <main
       id="about-me"
-      className="flex flex-col md:justify-between md:flex-row"
+      className="flex flex-col lg:justify-between lg:flex-row"
     >
       <motion.div
         ref={ref}
@@ -22,10 +22,10 @@ export function AboutMe() {
         animate={isInView ? { x: 0, opacity: 1 } : { x: -300, opacity: 0 }}
         layout={false}
         transition={{ duration: 0.5 }}
-        className="space-y-4 md:w-[50%]"
+        className="space-y-4 lg:w-[50%]"
       >
         <Title>About me</Title>
-        <div className="text-xl flex flex-col gap-y-4 text-gray-400 ">
+        <div className="xl:text-xl flex flex-col gap-y-4 text-gray-400 ">
           <p>
             Hello im Vinicius! And i really do like creating web sites,
             i&apos;ve been introduced to web development when i was 14 years old
@@ -57,13 +57,13 @@ export function AboutMe() {
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 1, delay: 0.65 }}
-        className="p-4 border-b-4 border-r-4 hover:border-white hover:scale-105 transition-all"
+        className=" flex items-center justify-center   "
       >
         <Image
-          className="rounded-2xl "
+          className="border-b-4 border-r-4 p-4 transition-all hover:border-white hover:scale-105"
           src="/me.png"
           width="400"
-          height="400"
+          height="500"
           alt="Despite everthing, its still me"
         />
       </motion.div>
